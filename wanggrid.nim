@@ -101,9 +101,9 @@ proc random_tile_with(left, up: uint8): WangTile =
     down = rand(1)
   
   result += uint8(left)
-  result += uint8(up * 2)
+  result += uint8(down * 2)
   result += uint8(right * 4)
-  result += uint8(down * 8)
+  result += uint8(up * 8)
 
 proc random_tile_with_left(left: uint8): WangTile =
   let up = rand(1).uint8
