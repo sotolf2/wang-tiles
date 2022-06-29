@@ -3,7 +3,7 @@ import
   std/strformat,
   std/strutils
 
-const SIDE = 101
+const SIDE = 25
 
 type Pixel = object
   r: uint8
@@ -148,11 +148,11 @@ proc render(grid: WangGrid, col1, col2: Pixel): WangRenderGrid =
     result.add(cur_col)
 
 proc main =
-  let col1 = "81a1c1".to_pixel
+  let col1 = "bf616a".to_pixel
   let col2 = "ebcb8b".to_pixel
   echo "Generating wang-grid.ppm"
   echo " - Randomizing grid"
-  let grid = gen_tile_grid(10, 15)
+  let grid = gen_tile_grid(40, 70)
   echo " - Rendering grid"
   let render_grid = render(grid, col1, col2)
   echo " - Creating file"
