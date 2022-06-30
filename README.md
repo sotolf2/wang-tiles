@@ -2,6 +2,10 @@
 An experiment to play around with wang-tiles and the ppm P6 file format
 
 
+## Example generated picture:
+
+![Example grid generated](https://github.com/sotolf2/wang-tiles/blob/main/Skjermbilde.PNG?raw=true)
+
 ## Purpose
 
 This is just a little experiment with me having fun getting something to work
